@@ -11,6 +11,8 @@ document.getElementById('tft').addEventListener('click', function(){
 });
 
 
+
+
 const textBox = document.getElementById('champ');
 const teemo = document.getElementById('temo');
 teemo.src = 'pictures/teemo.jpg';
@@ -39,10 +41,27 @@ textBox.addEventListener('keypress', function() {
 }
 });
 
+const timerElement = document.getElementById('timer');
+const stopButton = document.getElementById('stop-button');
+let seconds = 0;
+let timerInterval; // Variable to store the interval
+
+// Function to start the timer
+function startTimer() {
+    timerInterval = setInterval(function() {
+        seconds++;
+        timerElement.textContent = seconds + ' seconds';
+    }, 1000);
+}
+
+// Start the timer when the page loads
+
+
 const kysely = document.getElementById('kysely');
 
 document.getElementById('alert-button').addEventListener('click', function() {
     kysely.style.display = 'block';
+    startTimer();
 });
 
 const quizForm = document.getElementById('kysely');
@@ -51,6 +70,7 @@ const scoreElement = document.getElementById('score');
 
 submitButton.addEventListener('click', function() {
     let score = 0;
+    clearInterval(timerInterval);
 
     // Get the selected answers and calculate the score
     const answers = quizForm.elements;
