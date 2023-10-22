@@ -4,24 +4,35 @@
 
 <head>
     <link rel="stylesheet" href="Style.css">
+    
 </head>
-<script src="On.js"></script>
 
-<img src="pictures/lologo.jpg" alt="logo">
+
 
 <body>
-
-    <h1>My First Heading</h1>
     
-    <p>Loli o hyvö peli suosittelen :D</p>
+    <header>
+        <h1>melekkone sivu</h1>
+    </header>
 
+    <main>
+        
+    <p>Loli o hyvö peli suosittelen :D</p>
+    <img id="lol" src="pictures/lologo.jpg" alt="logo"><br>
+    <a href="https://fi.wikipedia.org/wiki/League_of_Legends">League of legends wikipedia</a>
+    <br>
+    <br>
     <form>
-        <label for="fname">Favourite league of legends champion:</label><br>
-        <input type="text" id="fname" name="fname"><br>
+        <label for="fname">Paras league of legends champion:</label><br>
+        <input type="text" id="champ" name="champ"><br>
+        <img id="temo" style="display: none;" src="pictures/teemo.jpg"><br>
+        <img id="yas" style="display: none;" src="pictures/yasuo.jpg"><br>
     </form>
 
-    <p>paras pelimuoto?</p>
+
+    
     <form>
+        <p>paras pelimuoto?</p>
         <input type="radio" id="sr" name="pelimuoto" value="SR">
         <label for="sr">summoner's rift</label><br>
         <input type="radio" id="aram" name="pelimuoto" value="ARAM">
@@ -29,6 +40,70 @@
         <input type="radio" id="tft" name="pelimuoto" value="TFT">
         <label for="tft">TFT</label>
       </form>
+
+      <table>
+        <tr>
+            <th>jotaki</th>
+            <th>Melekkone</th>
+
+        </tr>
+        <tr>
+            <td>tällästä</td>
+            <td>en tiiä</td>
+            <td>vituttaa</td>
+        </tr>
+        </table>
+
+
+    <section>
+        <h2>Kysely</h2>
+        <p>klikkaa aloittaaksesi kyselyn:</p>
+        <button id="alert-button">Start</button>
+        <form id="kysely" style="display: none;">
+            <div class="question">
+                <p>Montako hahmoa lolissa on?</p>
+                <label>
+                    <input type="radio" name="q1" value="0"> 185
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="0"> 147
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="1"> 165
+                </label>
+            </div>
+            <div class="question">
+                <p>Minä vuonna loli julkaistiin?</p>
+                <label>
+                    <input type="radio" name="q2" value="0"> 2010
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="1"> 2009
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="0"> 2011
+                </label>
+            </div>
+            <div class="question">
+                <p>Millä levelillä ultimate abilityn saa auki?</p>
+                <label>
+                    <input type="radio" name="q3" value="1"> 6
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="0"> 5
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="0"> 10
+                </label>
+            </div>
+            <button type="button" id="submit-button">Submit</button>
+            <p id="result">Your score: <span id="score">0</span></p>
+        </form>
+    </section>
+
+
+</main>
+    <script src="Script.js"></script>
 
 </body>
 

@@ -1,21 +1,52 @@
 body {
-    background-color: lightblue;
+    background-color: grey;
     img {
         width: 200px;
         height: 200px;
     }
+    
   }
-  img {
-        width: 50%;
-        height: 50%;
+  #lol {
+        width: 25%;
+        height: 25%;
+        margin: 10px;
+        display: flex;
     }
   
   h1 {
-    color: white;
+    color: red;
     text-align: center;
+    font-size: 50px;
   }
   
   p {
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
+  }
+  form {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  section {
+    text-align: center;
+  }
+
+  table{
+    text-align: center;
+    font-size: large;
+  }
+
+  #temo{
+    width: 10%;
+    height: 10%;
+    display: flex;
+    margin: auto;
+  }
+
+  #yas{
+    width: 10%;
+    height: 10%;
+    display: flex;
+    margin: auto;
   }
