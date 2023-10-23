@@ -29,11 +29,15 @@ textBox.addEventListener('keypress', function() {
 
     if (enteredText === 'teemo') {
         // Display an alert if the entered text is "hello"
+        event.preventDefault();
         alert('You have no SOUL!');
         teemo.style.display = 'block';
+        yasuo.style.display = 'none';
     }
     else if(enteredText === 'yasuo'){
+        event.preventDefault();
         yasuo.style.display = 'block';
+        teemo.style.display = 'none';
     }
     else{
         alert('no makiia');
