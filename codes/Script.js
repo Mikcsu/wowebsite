@@ -15,9 +15,9 @@ document.getElementById('tft').addEventListener('click', function(){
 
 const textBox = document.getElementById('champ');
 const teemo = document.getElementById('temo');
-teemo.src = 'pictures/teemo.jpg';
+teemo.src = 'codes/pictures/teemo.jpg';
 const yasuo = document.getElementById('yas');
-yasuo.src = 'pictures/yasuo.jpg';
+yasuo.src = 'codes/pictures/yasuo.jpg';
 
 // Add an input event listener to the text box
 textBox.addEventListener('keypress', function() {
