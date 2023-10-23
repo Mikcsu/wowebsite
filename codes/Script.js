@@ -71,6 +71,7 @@ const scoreElement = document.getElementById('score');
 submitButton.addEventListener('click', function() {
     let score = 0;
     clearInterval(timerInterval);
+    alert('syyslomalle vois mennä');
 
     // Get the selected answers and calculate the score
     const answers = quizForm.elements;
